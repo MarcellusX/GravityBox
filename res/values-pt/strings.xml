@@ -11,6 +11,8 @@
     <string name="vol_music_controls_summary">Teclas de volume trocam de faixa após pressionar e segurar com a tela desligada</string>
 
     <string name="low_battery_warning_policy_title">Aviso de bateria fraca</string>
+    <string name="low_battery_warning_default">Padrão</string>
+    <string name="low_battery_warning_nonintrusive">Não intrusivo</string>
     <string name="low_battery_warning_off">Desligado</string>
 
     <string name="reboot_required">As mudanças serão aplicadas após reiniciar o dispositivo.</string>
@@ -56,6 +58,7 @@
     <string name="quick_settings_quiet_hours_off">Horas de silêncio desativadas</string>
     <string name="quick_settings_quiet_hours_on">Horas de silêncio ativadas</string>
     <string name="quick_settings_quiet_hours_auto">Horas de silêncio automáticas</string>
+    <string name="quick_settings_quiet_hours_wear"> Modo Wear</string>
 
     <!-- QuickSettings settings -->
     <string name="quick_settings_title">Configurações rápidas na barra de status</string>
@@ -94,9 +97,9 @@
 
     <!-- About -->
     <string name="pref_cat_about_title">Sobre</string>
-    <string name="about_gb_summary">Codificado por C3C076@XDA. Entre em contato no tópico oficial.</string>
+    <string name="about_gb_summary">Codificado por C3C076@XDA. Toque aqui para visitar o tópico oficial.</string>
     <string name="about_xposed_title">Xposed framework</string>
-    <string name="about_xposed_summary">Codificado por rovo89@XDA. Entre em contato no tópico oficial.</string>
+    <string name="about_xposed_summary">Codificado por rovo89@XDA. Toque aqui para visitar o tópico oficial.</string>
     <string name="about_donate_title">Doar</string>
     <string name="about_donate_summary">Toque aqui para dar suporte ao desenvolvimento deste app, fazendo uma doação via PayPal.</string>
 
@@ -117,6 +120,7 @@
     <string name="lockscreen_bg_default">Papel de parede padrão</string>
     <string name="lockscreen_bg_color">Cor sólida</string>
     <string name="lockscreen_bg_image">Imagem personalizada</string>
+    <string name="lockscreen_bg_last_screen">Ultima imagem</string>
     <string name="pref_lockscreen_bg_color_title">Escolha a cor</string>
     <string name="pref_lockscreen_bg_color_summary">Permite escolher uma cor personalizada para a tela de bloqueio</string>
     <string name="pref_lockscreen_bg_image_title">Escolha uma imagem</string>
@@ -160,7 +164,8 @@
 
     <!-- Lockscreen rotation -->
     <string name="pref_lockscreen_rotation_title">Habilitar rotação da tela de bloqueio</string>
-
+    <string name="pref_lockscreen_rotation_summary">requer reinício</string>
+    
     <!-- Lockscreen menu key -->
     <string name="pref_lockscreen_menu_key_title">Habilitar tecla de Menu</string>
     <string name="pref_lockscreen_menu_key_summary">Permite que a tecla de Menu seja usada para desbloquear rapidamente o dispositivo (necessário reiniciar)</string>
@@ -235,6 +240,7 @@
     <string name="quick_pulldown_off">Desativado</string>
     <string name="quick_pulldown_right">Direita</string>
     <string name="quick_pulldown_left">Esquerda</string>
+    <string name="quick_pulldown_both">Ambos</string>
 
     <!-- Statusbar colors category -->
     <string name="pref_cat_statusbar_colors_title">Cores da barra de status</string>
@@ -371,9 +377,12 @@
     <string name="hwkey_action_custom_app_missing">Aplicativo não encontrado!</string>
 
     <!-- Link notification panel clock to Deskclock -->
+    <string name="pref_cat_statusbar_clock_title">Relógio da barra de status</string>
+    <string name="pref_cat_notif_panel_clock_title">Relógio do painel de notificação</string>
     <string name="pref_clock_link_title">Aplicativo de relógio do painel de notificações</string>
     <string name="pref_clock_link_summary">Une o relógio do painel de notificações a outro aplicativo ao invés das configs. de data e hora</string>
-
+    <string name="pref_clock_longpress_link_title">Aplicativo de relógio no toque longo</string>
+    
     <!-- GravityBox settings startup handling -->
     <string name="gb_startup_progress">Aguardando resposta do framework do GravityBox...</string>
     <string name="gb_startup_error">O framework do GravityBox não responde. Saindo.</string>
@@ -386,7 +395,10 @@
     <string name="pref_expanded_desktop_title">Modo de área de trabalho expandida</string>
     <string name="expanded_desktop_disabled">Desabilitado</string>
     <string name="expanded_desktop_navbar">Esconder barra de navegação</string>
+    <string name="expanded_desktop_immersive_statusbar">Barra de status imersiva</string>
+    <string name="expanded_desktop_immersive_navbar">Barra de navegação imersiva</string>
     <string name="expanded_desktop_both">Esconder ambos</string>
+     <string name="expanded_desktop_immersive">Imersiva</string
     <string name="action_expanded_desktop_title">Área de trabalho expandida</string>
     <string name="action_expanded_desktop_on">Área de trabalho expandida ativada</string>
     <string name="action_expanded_desktop_off">Área de trabalho expandida desativada</string>
@@ -605,6 +617,7 @@
     <string name="pref_hwkey_lockscreen_torch_title">Lanterna na tela de bloqueio</string>
     <string name="hwkey_ls_torch_disabled">Desabilitado</string>
     <string name="hwkey_ls_torch_home_longpress">No toque longo do botão Home</string>
+    <string name="hwkey_ls_torch_power_longpress">No toque longo do botão Power</string>
 
     <!-- QuickSettings management master switch -->
     <string name="pref_qs_management_enable_summary">Chave-mestra para manipulação das Configurações Rápidas (requer reinício)</string>
@@ -620,6 +633,7 @@
 
     <!-- Volume panel timeout -->
     <string name="pref_volume_panel_timeout_title">Tempo-limite do painel de volumes</string>
+    <string name="pref_volume_panel_timeout_summary">Deixe zero para o tempo-limite padrão</string>
 
     <!-- Ringer tile modes -->
     <string name="ringer_mode_vibrate">Vibrar</string>
@@ -1211,7 +1225,14 @@
     <string name="increasing_ring_enable">Ativar</string>
     <string name="increasing_ring_min_volume_title">Volume inicial de toque</string>
     <string name="increasing_ring_volume_notice">Nota:\nUma vez que o volume inicial é superior ao do toque do sistema, o aviso será tocado com o volume de toque do sistema.</string>
-
+    <string name="increasing_ring_ramp_up_duration_title">Duração da aceleração</string>
+    <string name="increasing_ring_interval_0">5 segundos</string>
+    <string name="increasing_ring_interval_1">10 segundos</string>
+    <string name="increasing_ring_interval_2">15 segundos</string>
+    <string name="increasing_ring_interval_3">20 segundos</string>
+    <string name="increasing_ring_interval_4">25 segundos</string>
+    <string name="increasing_ring_interval_5">30 segundos</string>
+    
     <!-- Icon picker: Snapchat icon -->
     <string name="shortcuts_icon_picker_snapchat">Snapchat</string>
 
@@ -1260,6 +1281,7 @@
     <string name="qs_tile_compass">Bússola</string>
     <string name="quick_settings_compass_off">Bússola desativada</string>
     <string name="quick_settings_compass_init">Inicializando&#8230;</string>
+    <string name="quick_settings_compass_value" translatable="false">%1$.0f\u00b0 %2$s</string>
 
     <!-- Cardinal directions -->
     <string name="cd_north">N</string>
@@ -1294,6 +1316,8 @@
 
     <!-- Quiet Hours: mute vibrations -->
     <string name="pref_lc_qh_mute_vibe_title">Desativar vibração</string>
+    <string name="pref_lc_qh_mute_vibe_summary">Desliga as vibrações de notificação neste dispositivo e
+         qualquer dispositivo de Android Wear pareado</string>
 
     <!-- Quiet Hours: interactive mode -->
     <string name="pref_lc_qh_interactive_title">Modo interativo</string>
@@ -1316,6 +1340,7 @@
 
     <!-- UNC HeadsUp category + additional options -->
     <string name="pref_cat_lc_heads_up_title">Notificações flutuantes (Heads up)</string>
+    <string name="pref_lc_headsup_dnd_title">Não perturbe</string>
     <string name="pref_lc_headsup_dnd_summary">Faz com que nenhuma notificação flutuante seja mostrada enquanto o aplicativo estiver em primeiro plano</string>
 
     <!-- UNC Active Screen Mode -->
@@ -1352,6 +1377,7 @@
     <string name="pref_charging_led_title">Luz de bateria carregando</string>
     <string name="charging_led_default">Padrão</string>
     <string name="charging_led_emulated">Através de simulação</string>
+    <string name="charging_led_constant">Constante (requer suporte ao driver LED)</string>
     <string name="charging_led_disabled">Desativada</string>
 
     <!-- Quiet hours week days -->
@@ -1363,6 +1389,7 @@
     <string name="system_sound_touch">Sons de toque</string>
     <string name="system_sound_screen_lock">Som da tela de bloqueio</string>
     <string name="system_sound_charger">Sons do GravityBox ao (des)conectar carregador</string>
+    <string name="system_sound_ringer">Campainha de telefone</string>
 
     <!-- Proximty wake: ignore for incoming call -->
     <string name="pref_power_proximity_wake_ignore_call_title">Ignorar em chamada recebida</string>
@@ -1526,6 +1553,7 @@ se o tráfego de dados móveis atual excede o limite definido (Ajuste para 0 par
 
     <!-- UNC: Notification visibility -->
     <string name="pref_lc_notif_visibility_title">Visibilidade</string>
+    <string name="pref_lc_notif_visibility_title">Visibilidade do conteúdo</string>
     <string name="pref_lc_notif_visibility_summary">Determina a visibilidade das notificações na tela de bloqueio protegida. 
         Se aplica quando a opção \"Ocultar o conteúdo confidencial de notificações\" está ativa</string>
     <string name="lc_notif_visibility_default">Padrão</string>
@@ -1568,7 +1596,405 @@ se o tráfego de dados móveis atual excede o limite definido (Ajuste para 0 par
     <string name="pref_signal_cluster_dem_title">Desativar exclamações</string>
     <string name="pref_signal_cluster_dem_summary">Necessário reiniciar</string>
 
+    <!-- UNC: Disable sound to vibrate conversion -->
+    <string name="pref_lc_sound_vibrate_title">Desativar conversão de som para vibração</string>
+    <string name="pref_lc_sound_vibrate_summary">Previne notificações com vibrações desligadas sendo 
+        forçadas a vibrar durante o modo de toque somente de vibração</string>
+
+    <!-- UNC: QuietHours: mute system level vibrations -->
+    <string name="pref_lc_qh_mute_system_vibe_title">Vibrações do dispositivo mudo</string>
+    <string name="pref_lc_qh_mute_system_vibe_summary">Desliga TODAS as vibrações ao nível do sistema,
+         incluindo vibrações de notificação neste dispositivo. As notificações no dispositivo pareado com Android Wear podem
+         vibra ainda caso a vibração de notificação esteja ativada.
+    </string>
+
+    <!-- Lockscreen: doubletap to sleep -->
+    <string name="pref_lockscreen_dt2s_title">Toque duplo para dormir</string>
+
+    <!-- Status bar: disable peek -->
+    <string name="pref_statusbar_disable_peek_title">Desabilitar peek</string>
+    <string name="pref_statusbar_disable_peek_summary">Won\'t expandir a barra de status em um único toque</string>
+
+    <!-- Status bar: Double-tap to sleep -->
+    <string name="pref_statusbar_dt2s_title">Toque duplo para dormir</string>
+    <string name="pref_statusbar_dt2s_summary">Reque que o peak esteja desabilitado</string>
+
+    <!-- Pie trigger indicator -->
+    <string name="pref_pie_control_trigind_title">Indicador do gatilho</string>
+    <string name="pref_pie_control_trigind_color_title">Cor do indicador do gatilho</string>
+
+    <!-- WiFi tile settings -->
+    <string name="pref_cat_qs_wifi_tile_title">Configuração do quadro de WiFi</string>
+
+    <!-- Bluetooth tile settings -->
+    <string name="pref_cat_qs_bt_tile_title">Configuração do quadro de Bluetooth</string>
+
+    <!-- MTK: disable network type indicators -->
+    <string name="pref_signal_cluster_dnti_title">Desativar indicadores de tipo de rede</string>
+    <string name="pref_signal_cluster_dnti_summary">Requer reinício</string>
+
+    <!-- Signal cluster: Disable "No SIM" icon -->
+    <string name="pref_signal_cluster_nosim_title">Desativar ícone \"No SIM\"</string>
+    <string name="pref_signal_cluster_nosim_summary">Requer reinício</string>
+
+    <!-- Lockscreen: Direct unlock policy -->
+    <string name="pref_lockscreen_direct_unlock_policy_title">Política de desbloqueio direto</string>
+
+    <!-- Permission denial message -->
+    <string name="permission_denied_msg">Você decidiu negar algumas das permissões.
+         Observe que isso impedirá que os recursos relacionados funcionem.</string>
+    <string name="permission_denied_hide_title">Don\'t show again</string>
+
+    <!-- Cellular tile Mobile data toggle -->
+    <string name="pref_cell_tile_data_toggle_title">Toggle de dados móveis</string>
+    <string name="tile_data_toggle_disabled">Desativado</string>
+    <string name="tile_data_toggle_singlepress">Ligar com toque simples</string>
+    <string name="tile_data_toggle_longpress">Ligar com toque longo</string>
+
+    <!-- Lockscreen: Imprint mode -->
+    <string name="pref_lockscreen_imprint_mode_title">Modo de impressão</string>
+    <string name="imprint_mode_default">Acordar e desbloquear (padrão)</string>
+    <string name="imprint_mode_wake_only">Acordar apenas</string>
+
+    <!-- Lockscreen: Bottom-left action -->
+    <string name="pref_lockscreen_bleft_action_title">Ação no botão esquerdo</string>
+    <string name="pref_lockscreen_bright_action_title">Ação no botão direito</string>
+
+    <!-- Lockscreen: Quick unlock PIN length -->
+    <string name="pref_lockscreen_pin_length_title">Comprimento do PIN</string>
+    <string name="pref_lockscreen_pin_length_summary">O desbloqueio rápido precisa saber o comprimento exato do seu PIN para funcionar de forma confiável</string>
+
+    <!-- Power: Camera vibration pattern -->
+    <string name="pref_power_camera_vibrate_pattern_title">Padrão de vibração da câmera</string>
+    <string name="pref_power_camera_vibrate_pattern_summary">Define o padrão de vibração na forma de lista separada por vírgula de
+         ligado/desligado a duração dos pares em milissegundos para câmera iniciada a partir do botão de energia.
+         Deixe vazio para padrão. Defina para 0 para desativar a vibração.</string>
+
+    <!-- QS: common quick mode option -->
+    <string name="pref_tile_quick_mode_title">Ativar modo rápido</string>
+    <string name="pref_tile_enabled_modes_title">Modos habilitados</string>
+
+    <!-- DND tile settings -->
+    <string name="pref_cat_qs_dnd_tile_title">Configurações do quadro Não Perturbe</string>
+    <string name="pref_dnd_tile_quick_mode_summary">Permite percorrer através do modo escolhido não perturbe com um toque</string>
+    <string name="pref_dnd_tile_enabled_modes_summary">Define quais modos não perturbe percorrer</string>
+    <string name="dnd_tile_em_priority">Apenas prioridade</string>
+    <string name="dnd_tile_em_alarms">Apenas alarmes</string>
+    <string name="dnd_tile_em_silence">Silêncio Total</string>
+    <string name="pref_dnd_tile_duration_mode_title">Duração predefinida</string>
+    <string name="dnd_tile_dm_manual">Até desligar manualmente</string>
+    <string name="dnd_tile_dm_alarm">Até o próximo alarme</string>
+    <string name="dnd_tile_dm_custom">Personalizado</string>
+    <string name="pref_dnd_tile_duration_title">Definir duração personalizada</string>
+
+    <!-- Location tile (Slimkat) settings -->
+    <string name="pref_cat_qs_location_tile_title">Configuração do quadro de localização (SlimKat)</string>
+    <string name="pref_location_tile_quick_mode_summary">Permite percorrer através dos modos de localização na tela com um toque</string>
+
+    <!-- Cellular network modes -->
+    <string name="network_mode_0">GSM/WCDMA preferido (3G/2G)</string>
+    <string name="network_mode_1">GSM somente (2G)</string>
+    <string name="network_mode_2">WCDMA somente (3G)</string>
+    <string name="network_mode_3">GSM/WCDMA auto (2G/3G)</string>
+    <string name="network_mode_4">CDMA/EvDo auto (2G/3G)</string>
+    <string name="network_mode_5">CDMA somente (2G)</string>
+    <string name="network_mode_6">EvDo somente (3G)</string>
+    <string name="network_mode_7">Global (2G/3G)</string>
+    <string name="network_mode_8">LTE CDMA (4G/2G/3G)</string>
+    <string name="network_mode_9">LTE GSM (4G/2G/3G)</string>
+    <string name="network_mode_10">LTE Global (4G/2G/3G)</string>
+    <string name="network_mode_11">LTE somente (4G)</string>
+    <string name="network_mode_12">LTE/WCDMA (4G/3G)</string>
+    <string name="network_mode_13">TD-SCDMA somente (3G)</string>
+    <string name="network_mode_14">TD-SCDMA/WCDMA (3G)</string>
+    <string name="network_mode_15">TD-SCDMA/LTE (4G/3G)</string>
+    <string name="network_mode_16">TD-SCDMA/GSM (2G/3G)</string>
+    <string name="network_mode_17">TD-SCDMA/LTE/GSM (4G/2G/3G)</string>
+    <string name="network_mode_18">TD-SCDMA/WCDMA/GSM (2G/3G)</string>
+    <string name="network_mode_19">TD-SCDMA/LTE/WCDMA (4G/3G)</string>
+    <string name="network_mode_20">TD-SCDMA/LTE/GSM/WCDMA (4G/2G/3G)</string>
+    <string name="network_mode_21">TD-SCDMA Global (2G/3G)</string>
+    <string name="network_mode_22">TD-SCDMA LTE Global (4G/2G/3G)</string>
+    <string name="network_mode_unknown">Desconhecido</string>
+
+    <!-- Network mode tile settings -->
+    <string name="pref_nm_tile_enabled_modes_summary">Define qual mosaico de modos de rede deve suportar</string>
+    <string name="pref_nm_tile_quick_mode_summary">Permite percorrer através dos modos de rede selecionados na tela com um toque</string>
+
+    <!-- Ringer mode tile settings -->
+    <string name="pref_cat_qs_rm_tile_title">Configurações do quadro de modo de toque</string>
+    <string name="pref_rm_tile_enabled_modes_summary">Define qual quadro de modos de toque deve suportar</string>
+    <string name="pref_rm_tile_quick_mode_summary">Permite percorrer através dos modos de toque selecionados na tela com um toque</string>
+
+    <!-- Stay awake tile settings -->
+    <string name="pref_cat_qs_sa_tile_title">Manter as configurações de telas despertas</string>
+    <string name="pref_sa_tile_enabled_modes_summary">Define qual tela de tempo limite deve suportar</string>
+    <string name="pref_sa_tile_quick_mode_summary">Permite percorrer através dos tempos limite selecionados na tela com um toque</string>
+
+    <!-- Lockscreen: Smart unlock policy -->
+    <string name="pref_lockscreen_smart_unlock_policy_title">Política do Smart unlock</string>
+
+    <!-- BatteryPercentText position -->
+    <string name="pref_battery_percent_text_position_title">Posição na barra de status</string>
+    <string name="pref_battery_percent_text_position_summary">Requer reinício</string>
+    <string name="battery_percent_text_position_right">Ícone da bateria a direita</string>
+    <string name="battery_percent_text_position_left">Ícone da bateria a esquerda</string>
+
+    <!-- Disable Imprint vibrations -->
+    <string name="pref_imprint_vibe_disable_title">Desabilita impressão de vibração</string>
+    <string name="imprint_vibe_disable_success">Autenticação bem sucedida</string>
+    <string name="imprint_vibe_disable_error">Erro de autenticação</string>
+
+    <!-- UNC: Vibrations replace mode -->
+    <string name="pref_lc_vibrate_replace_title">Substitui a vibração original</string>
+    <string name="pref_lc_vibrate_replace_summary">Aplica a substituição de vibração somente no caso de notificação original ter vibração</string>
+
+    <!-- UNC: Sound replace mode -->
+    <string name="pref_lc_sound_replace_title">Substitua o som original</string>
+    <string name="pref_lc_sound_replace_summary">Aplica a substituição de som apenas no caso de notificação original ter som</string>
+
+    <!-- Battery tile options -->
+    <string name="pref_battery_tile_temp_title">Mostrar temperatura</string>
+    <string name="pref_battery_tile_voltage_title">Mostrar voltagem</string>
+
+    <!-- QS: Scale correction -->
+    <string name="pref_qs_scale_correction_title">Correção de escala</string>
+
+    <!-- UNC: Notification lock screen visibility -->
+    <string name="pref_lc_notif_visibility_ls_title">Visibilidade da tela de bloqueio</string>
+    <string name="lc_notif_visibility_ls_default">Padrão</string>
+    <string name="lc_notif_visibility_ls_clearable">Ocultar notificações que da para limpar</string>
+    <string name="lc_notif_visibility_ls_persistent">Ocultar notificações persistentes</string>
+    <string name="lc_notif_visibility_ls_all">Ocultar todas as notificações</string>
+
+    <!-- UNC: Hide persistent notifications -->
+    <string name="pref_lc_notif_hide_persistent_title">Ocultar notificações persistentes</string>
+    <string name="pref_lc_notif_hide_persistent_summary">Esconde todas as notificações em curso e outras não limpáveis
+         vindo deste aplicativo</string>
+
+    <!-- Navbar: Auto-fade keys -->
+    <string name="pref_navbar_autofade_keys_title">Teclas de desvanecimento automático</string>
+    <string name="pref_navbar_autofade_keys_summary">Desliza as teclas automaticamente após o término do tempo limite. Definir para 0 para desativar.</string>
+    <string name="pref_navbar_autofade_show_keys_title">Mostrar teclas ligadas</string>
+    <string name="autofade_show_keys_navbar">Toque na barra de navegação</string>
+    <string name="autofade_show_keys_screen">Toque na tela</string>
+
+    <!-- QS: StayAwake tile Auto-reset -->
+    <string name="pref_sa_tile_auto_reset_title">Auto-reset</string>
+    <string name="pref_sa_tile_auto_reset_summary">Define o tempo limite da tela padrão automaticamente quando a tela é desativada</string>
+
+    <!-- Lockscreen: PIN scramble -->
+    <string name="pref_lockscreen_pin_sramble_title">Codificar PIN</string>
+    <string name="pref_lockscreen_pin_sramble_summary">Codifique o PIN ao desbloquear o dispositivo</string>
+
+    <!-- UNC: LED DND -->
+    <string name="pref_lc_led_dnd_title">Não perturbe</string>
+    <string name="pref_lc_led_dnd_summary">Esconde o LED para os modos Não perturbe escolhidos</string>
+    <string name="pref_lc_led_dnd_dialog_title">Escolha qual modo Não perturbe para manter o LED desligado</string>
+
+    <!-- WiFi shortcut -->
+    <string name="wifi_on">WiFi ligado</string>
+    <string name="wifi_off">WiFi desligado</string>
+
+    <!-- Airplane mode shortcut -->
+    <string name="airplane_mode_on">Modo avião ligado</string>
+    <string name="airplane_mode_off">Modo avião desligado</string>
+
+    <!-- Autobrightness mode shortcut -->
+    <string name="autobrightness_on">Brilho automático ligado</string>
+    <string name="autobrightness_off">Brilho automático desligado</string>
+
+    <!-- Bluetooth shortcut -->
+    <string name="bluetooth_on">Bluetooth ligado</string>
+    <string name="bluetooth_off">Bluetooth desligado</string>
+
+    <!-- Expanded desktop shortcut -->
+    <string name="expanded_desktop_on">Área de trabalho expandida ligada</string>
+    <string name="expanded_desktop_off">Área de trabalho expandid desligada</string>
+
+    <!-- Mobile data shortcut -->
+    <string name="mobile_data_on">Dados móveis ligado</string>
+    <string name="mobile_data_off">Dados móveis desligado</string>
+
+    <!-- NGC shortcut -->
+    <string name="nfc_on">NFC ligado</string>
+    <string name="nfc_off">NFC desligado</string>
+
+    <!-- Quiet hours shortcut -->
+    <string name="quiet_hours_on">Perído de silêncio ligado</string>
+    <string name="quiet_hours_off">Perído de silêncio desligado</string>
+    <string name="quiet_hours_auto">Perído de silêncio automático</string>
+    <string name="quiet_hours_wear">Modo Wear</string>
+
+    <!-- Auto rotation shortcut -->
+    <string name="auto_rotation_on">Rotação automática ligada</string>
+    <string name="auto_rotation_off">Rotação automática desligada</string>
+
+    <!-- Smart radio shortcut -->
+    <string name="smart_radio_on">Rádio inteligente ligado</string>
+    <string name="smart_radio_off">Rádio inteligente desligado</string>
+
+    <!-- Sync shortcut -->
+    <string name="sync_on">Sincronização ligada</string>
+    <string name="sync_off">Sincronização desligada</string>
+
+    <!-- Hotspot shortcut -->
+    <string name="hotspot_on">Hotspot ligado</string>
+    <string name="hotspot_off">Hotspot desligado</string>
+
+    <!-- Statusbar: Hide vibrate icon -->
+    <string name="pref_sb_hide_vibrate_icon_title">Esconder ícone de vibração</string>
+
+    <!-- Shortcut: Show toast option -->
+    <string name="shortcut_show_toast">Mostrar mensagem de status</string>
+
+    <!-- Navbar custom key icon style -->
+    <string name="pref_navbar_custom_key_icon_style_title">Estilo do ícone</string>
+    <string name="ncki_icon_style1">6-pontos</string>
+    <string name="ncki_icon_style2">3-pontos</string>
+    <string name="ncki_icon_style3">Transparente</string>
+    <string name="ncki_icon_style4">Personalizado</string>
+    <string name="pref_navbar_custom_key_image_title">Escolher imagem personalizada</string>
+
+    <!-- Key actions: allow volume rocker wake when music active -->
+    <string name="pref_volume_rocker_wake_allow_music_title">Permitir acordar quando a música estiver ativactive</string>
+
+    <!-- Turn off -->
+    <string name="turn_off">Desligar</string>
+
+    <!-- Force AOSP -->
+    <string name="pref_force_aosp_title">Forçar AOSP</string>
+    <string name="pref_force_aosp_summary">Trata o sistema como AOSP.
+         Use no caso de seu dispositivo ser identificado como se estiver executando um sistema de marca, apesar de
+         na verdade estar executando um sistema alternativo baseado em AOSP (requer reinicialização)</string>
+
+    <!-- Wireless charger plugged sound -->
+    <string name="pref_charger_plugged_sound_wireless_title">Som de carregamento wireless</string>
+    <string name="stock_wireless_sound">Som padrão do carregamento wireless</string>
+
+    <!-- Dialer category -->
+    <string name="pref_cat_phone_dialer_title">Discador</string>
+
+    <!-- QS: Brightness control -->
+    <string name="pref_qs_brightness_icon_title">Mostrar ícone de brilho</string>
+    <string name="pref_qs_brightness_icon_summary">Mostra o ícone que indica o modo de brilho atual.
+         Alterna o brilho adaptativo com um toque, abre as configurações de exibição no toque longo.</string>
+
+    <!-- UNC: Active screen: Ignore updated notifications -->
+    <string name="pref_lc_active_screen_ignore_update_title">Ignorar notificação de atualização</string>
+    <string name="pref_lc_active_screen_ignore_update_summary">Não executará a tela Ativa quando a notificação existente for atualizada</string>
+
+    <!-- UNC: LED: Ignore updated notifications -->
+    <string name="pref_lc_led_ignore_update_title">Ignorar notificações atualizadas</string>
+    <string name="pref_lc_led_ignore_update_summary">Não ativará o LED novamente para a notificação existente
+         já visto pelo usuário quando ele é atualizado</string>
+
     <!-- HW Key Actions: expand quick settings -->
-    <string name="hwkey_action_expand_quicksettings">Expandir painel de configurações rápidas</string>
+    <string name="hwkey_action_expand_quicksettings">Expandir painel Configurações Rápidas</string>
+
+    <!-- Fingeprint launcher -->
+    <string name="pref_cat_fingerprint_launcher_title">Lançador de impressão digital</string>
+    <string name="pref_cat_fingerprint_launcher_summary">Permite o lançamento de aplicativos ou ações usando
+         sensor de impressão digital quando a tela está ligada e o dispositivo está desbloqueado</string>
+    <string name="pref_fingerprint_launcher_enable_summary">Ativa o recurso do iniciador de impressão digital
+         ligado ou desligado (requer reinicialização)</string>
+    <string name="pref_fingerprint_launcher_app_title">Escolha um aplicativo ou ação</string>
+    <string name="fingerprint_auth_failed">Falha na autenticação</string>
+    <string name="fingerprint_sensor_unavail">O sensor de impressão digital tornou-se indisponível</string>
+    <string name="fingerprint_sensor_locked">Sensor de impressão digital bloqueado devido a muitos
+         falhas de autenticação. Tente novamente em 35 segundos.</string>
+    <string name="fingerprint_no_app">Nenhuma aplicação/ação atribuída</string>
+    <string name="pref_cat_fingerprint_launcher_fingers_title">Ações por dedo</string>
+    <string name="finger">Dedo</string>
+    <string name="pref_cat_fingerprint_launcher_quick_tap_title">Ação de toque rápido</string>
+    <string name="pref_fingerprint_launcher_pause_title">Pausa</string>
+    <string name="pref_fingerprint_launcher_pause_summary">Pausa o iniciador até o próximo ciclo de desligar/ligar da tela.
+         Use no caso de outro aplicativo precisar do sensor por um período de tempo mais longo.</string>
+    <string name="fingerprint_launcher_paused">O iniciador foi pausado até o próximo ciclo de desligar/ligar a tela</string>
+    <string name="pref_fingerprint_launcher_show_toast_title">Mostrar mensagens de status</string>
+    <string name="pref_fingerprint_launcher_show_toast_summary">Mostrar mensagens de status sob a forma de pop-up</string>
+
+    <!-- Action: toggle/expand/collapse notification panel -->
+    <string name="notification_panel_toggle">Alterna painel de notificação</string>
+    <string name="notification_panel_collapse">Baixar painel de notificação</string>
+
+    <!-- Action: toggle/expand/collapse QS panel -->
+    <string name="qs_panel_toggle">alternar o painel Configurações Rápidas</string>
+    <string name="qs_panel_collapse">Baixar o painel de Configurações Rápidas</string>
+
+    <!-- Lockscreen shorcuts: Show badges -->
+    <string name="pref_lockscreen_shortcuts_show_badges_title">Mostrar emblemas</string>
+    <string name="pref_lockscreen_shortcuts_show_badges_summary">Mostra emblemas contendo contagem de notificações</string>
+
+    <!-- Clock: Show seconds -->
+    <string name="pref_statusbar_clock_show_seconds_title">Mostrar segundos</string>
+
+    <!-- ProgressBar: Sounds -->
+    <string name="pref_cat_statusbar_download_progress_sounds_title">Sons</string>
+    <string name="pref_statusbar_download_progress_sound_enable_title">Ativar som</string>
+    <string name="pref_statusbar_download_progress_sound_enable_summary">Reproduz o som da notificação quando a transferência é concluída ou interrompida</string>
+    <string name="pref_statusbar_download_progress_sound_title">Escolha o som</string>
+    <string name="pref_statusbar_download_progress_sound_screen_off_title">Somente quando a tela está desligada</string>
+    <string name="pref_statusbar_download_progress_sound_screen_off_summary">Reproduz apenas o som de notificação quando a tela está desligada</string>
+
+    <!-- Unlocker policy check feedback -->
+    <string name="msg_unlocker_missing">Não foi possível entrar em contato com o GravityBox Unlocker para executar a verificação de licença</string>
+    <string name="msg_unlocker_old">Sua versão do GravityBox Unlocker parece estar desatualizada. Por favor atualize.</string>
+    <string name="msg_unlocker_error">Erro inesperado ao acessar o GravityBox Unlocker</string>
+
+    <!-- Lockscreen: hide bottom actions -->
+    <string name="pref_lockscreen_bottom_actions_hide_title">Ocultar botões de ação</string>
+    <string name="bottom_action_left">Ocultar ação à esquerda</string>
+    <string name="bottom_action_right">Ocultar ação à esquerda</string>
+
+    <!-- Lockscreen: Direct unlock see through transparency level -->
+    <string name="pref_lockscreen_direct_unlock_trans_level_title">Ver através da transparência</string>
+
+    <!-- Subscription manager -->
+    <string name="sm_choose_voice_sub">Escolha o SIM padrão para chamadas</string>
+    <string name="sm_choose_sms_sub">Escolha o SIM padrão para mensagens</string>
+    <string name="sm_choose_data_sub">Escolha o SIM padrão para dados móveis</string>
+    <string name="sm_sub_change_voice_failed">Falha ao configurar o SIM padrão para chamadas</string>
+    <string name="sm_sub_change_sms_failed">Falha ao configurar o SIM padrão para mensagens</string>
+    <string name="sm_sub_change_data_failed">Falha ao configurar o SIM padrão para dados móveis</string>
+    <string name="sm_sub_change_voice_ok">SIM padrão para chamadas configurado para:</string>
+    <string name="sm_sub_change_sms_ok">SIM padrão para mensagens configurado para:</string>
+    <string name="sm_sub_change_data_ok">SIM padrão para dados móveis configurado para:</string>
+    <string name="sm_voice_ask">Sempre perguntar</string>
+
+    <!-- GB Actions: SIM settings -->
+    <string name="shortcut_sm_title">Configurações do SIM</string>
+    <string name="shortcut_sm_voice_sim_1">SIM 1 para ligações</string>
+    <string name="shortcut_sm_voice_sim_2">SIM 2 para ligações</string>
+    <string name="shortcut_sm_voice_sim_ask">Pergunte ao fazer uma chamada</string>
+    <string name="shortcut_sm_voice_sim_ui">Escolha SIM para chamadas</string>
+    <string name="shortcut_sm_sms_sim_1">SIM 1 para SMS</string>
+    <string name="shortcut_sm_sms_sim_2">SIM 2 para SMS</string>
+    <string name="shortcut_sm_sms_sim_ui">Escolha SIM para SMS</string>
+    <string name="shortcut_sm_data_sim_1">SIM 1 para dados</string>
+    <string name="shortcut_sm_data_sim_2">SIM 2 para dados</string>
+    <string name="shortcut_sm_data_sim_ui">Escolha SIM para dados</string>
+
+    <!-- QuickApp Tile #3 and #4 -->
+    <string name="pref_cat_quickapp_tile_3_title">Configurações do Aplicativo Rápido 3</string>
+    <string name="qs_tile_quickapp_3">Aplicativo Rápido 3</string>
+    <string name="pref_cat_quickapp_tile_4_title">Configurações do Aplicativo Rápido 4</string>
+    <string name="qs_tile_quickapp_4">Aplicativo Rápido 4</string>
+
+    <!-- QS Bluetooth Tethering tile -->
+    <string name="qs_tile_bt_tethering">Bluetooth Tethering</string>
+    <string name="qs_tile_bt_tethering_on">Tethering Ligado</string>
+    <string name="qs_tile_bt_tethering_off">Tethering Desligado</string>
+    <string name="qs_tile_bt_tethering_error">Erro</string>
+
+    <!-- QS protected when device locked -->
+    <string name="qs_protected_summary">Protegido quando o dispositivo está bloqueado</string>
+
+    <!-- Volume panel: notification stream label -->
+    <string name="notification_stream_name">Notificação</string>
+
+    <!-- OOS: hide dash charge icon -->
+    <string name="pref_battery_hide_dash_icon_title">Ocultar ícone do Dash Charge</string>
+    <string name="pref_battery_hide_dash_icon_summary">Para o indicador de bateria padrão</string>
 
 </resources>
